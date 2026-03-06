@@ -18,3 +18,15 @@ de imprimir o fim de linha após o resultado, caso contrário, você receberá
 # Link do problema: https://judge.beecrowd.com/pt/problems/view/1005
 
 # Escreva sua solução abaixo
+# Leitura das notas como ponto flutuante (float)
+A = float(input())
+B = float(input())
+
+# Cálculo da média ponderada
+# A soma dos pesos (3.5 + 7.5) é igual a 11.0
+media = (A * 3.5 + B * 7.5) / 11.0
+
+# Impressão com 5 casas decimais (padrão comum do Beecrowd para este problema)
+# Nota: Embora o enunciado mencione "uma casa decimal" na entrada, 
+# a saída esperada no Beecrowd 1005 geralmente exige 5 casas decimais.
+print(f"MEDIA = {media:.5f}")
